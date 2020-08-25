@@ -76,7 +76,6 @@ def check_if_win():
         winner = diagonal_winner
     else:
         winner = None
-    return
 
 #check rows
 def check_rows():
@@ -113,7 +112,6 @@ def check_columns():
         return board[3]
     elif column_3:
         return board[6]
-    return
 
 #check diagonals
 def check_diagonals():
@@ -129,7 +127,6 @@ def check_diagonals():
         return board[0]
     elif diagonal_2:
         return board[2]
-    return 
 
 #flip player
 def flip_player():
@@ -139,6 +136,5 @@ def flip_player():
         current_player = "O"
     elif current_player == "O":
         current_player = "X"
-    return
 
 play_game()
